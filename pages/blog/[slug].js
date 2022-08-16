@@ -6,7 +6,7 @@ import Link from "next/link";
 import { createClient } from "next-sanity";
 import PortableText from "react-portable-text";
 import imageUrlBuilder from "@sanity/image-url";
-import Navbar from "../../Components/Navbar";
+import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const Post = ({ blog, auth, profile }) => {

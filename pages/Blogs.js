@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 import { createClient } from "next-sanity";
 import PortableText from "react-portable-text";
 import imageUrlBuilder from "@sanity/image-url";
-import Navbar from '../Components/Navbar';
+import Navbar from '../components/Navbar';
 
 const Blogs = ({allBlogs,profile }) => {
 
