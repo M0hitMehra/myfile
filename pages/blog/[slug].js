@@ -110,7 +110,7 @@ const Post = ({ blog, auth, profile }) => {
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/atom-one-dark.min.css"
         />
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        {/* <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> */}
       </Head>
       <div id="main" className="relative">
         <div
