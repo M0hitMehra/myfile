@@ -6,7 +6,7 @@ const Contact = () => {
         
         <div className="bg-violet-400 container py-16 md:py-20  " id="contact">
               <h2 className=" text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-                Here's a contact form
+                Here&apos;s a contact form
               </h2>
               <h4 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
                 Have Any Questions?
@@ -77,7 +77,7 @@ const Contact = () => {
                     </p>
                   </div>
                   <p className="pt-2 invert text-left font-body font-bold text-primary lg:text-lg">
-                    I Can't Tell You Bro
+                    I Cannot Tell You Bro
                   </p>
                 </div>
               </div>

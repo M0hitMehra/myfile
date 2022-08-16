@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "next-sanity";
 import PortableText from "react-portable-text";
@@ -28,7 +29,7 @@ const Post = ({ blog, auth, profile }) => {
       <Head>
         <meta charset="utf-8" />
 
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
 
         <meta
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -66,7 +67,7 @@ const Post = ({ blog, auth, profile }) => {
         <meta name="twitter:site" content="@tailwindmade" />
 
         <link
-          crossorigin="crossorigin"
+          crossOrigin="crossorigin"
           href="https://fonts.gstatic.com"
           rel="preconnect"
         />
@@ -88,7 +89,7 @@ const Post = ({ blog, auth, profile }) => {
         />
 
         <link
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
           href="/assets/styles/main.min.css"
           media="screen"
           rel="stylesheet"
@@ -134,7 +135,7 @@ const Post = ({ blog, auth, profile }) => {
                   </h1>
                   <div className="flex items-center pt-5 md:pt-10">
                     <div>
-                      <img
+                      <Image
                         src={`${builder.image(writer.image).url()}`}
                         className="h-20 w-20 rounded-full border-2 border-grey-70 shadow"
                         alt="author image"
@@ -165,18 +166,18 @@ const Post = ({ blog, auth, profile }) => {
                 </div>
 
                 <div className="mt-10 flex justify-between border-t border-lila py-12">
-                  <a href="/" className="flex items-center">
+                  <Link href="/" className="flex items-center">
                     <i className="bx bx-left-arrow-alt text-2xl text-primary"></i>
                     <span className="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">
                       Previous Post
                     </span>
-                  </a>
-                  <a href="/" className="flex items-center">
+                  </Link>
+                  <Link href="/" className="flex items-center">
                     <span className="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">
                       Next Post
                     </span>
                     <i className="bx bx-right-arrow-alt text-2xl text-primary"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
                   <div className="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
@@ -197,19 +198,19 @@ const Post = ({ blog, auth, profile }) => {
                     </p>
 
                     <div className="flex items-center justify-center pt-5 md:justify-start">
-                      <a href={writer.fb}>
+                      <Link href={writer.fb}>
                         <i className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
-                      </a>
-                      <a href={writer.twitter} className="pl-4">
+                      </Link>
+                      <Link href={writer.twitter} className="pl-4">
                         <i className="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
-                      </a>
+                      </Link>
                       
-                      <a href={writer.linkedin} className="pl-4">
+                      <Link href={writer.linkedin} className="pl-4">
                         <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
-                      </a>
-                      <a href={writer.ig} className="pl-4">
+                      </Link>
+                      <Link href={writer.ig} className="pl-4">
                         <i className="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

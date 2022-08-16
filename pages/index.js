@@ -23,7 +23,7 @@ export default function Home({ allBlogs, profile }) {
       <Head>
         <meta charset="utf-8" />
 
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
 
         <meta
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -58,7 +58,7 @@ export default function Home({ allBlogs, profile }) {
         <meta name="twitter:site" content="@tailwindmade" />
 
         <link
-          crossorigin="crossorigin"
+          crossOrigin="crossorigin"
           href="https://fonts.gstatic.com"
           rel="preconnect"
         />
@@ -80,7 +80,7 @@ export default function Home({ allBlogs, profile }) {
         />
 
         <link
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
           href="/assets/styles/main.min.css"
           media="screen"
           rel="stylesheet"
@@ -202,12 +202,12 @@ export default function Home({ allBlogs, profile }) {
                   </div>
                   <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
                     <h1 className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
-                      Hello I'm {profile.name}
+                      Hello I am {profile.name}
                     </h1>
                     <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                       <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
                         <p className="font-body text-lg uppercase text-white">
-                          Let's connect
+                          Let&apos;s connect
                         </p>
                         <div className="hidden sm:block">
                           <i className="bx bx-chevron-right text-3xl text-yellow"></i>
